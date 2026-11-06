@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.env
+.venv/
+venv/
+ENV/
+.pytest_cache/
+
+# Node / React
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.npm/
+
+# Chroma & Local DBs
+*.chroma/
+.chroma/
+
+# Streamlit
+.streamlit/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

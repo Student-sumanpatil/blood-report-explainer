@@ -1,0 +1,21 @@
+# Core Schemas & Validation
+pydantic>=2.5.0
+fastapi>=0.110.0
+uvicorn>=0.30.0
+
+# Open Model Inference Client (Groq for Meta Llama 3.3 / Llama 3.2 Vision)
+groq>=0.9.0
+
+# Document & PDF Extraction
+pdfplumber>=0.11.0
+pypdf>=4.2.0
+
+# Web UI
+streamlit>=1.35.0
+
+# Environment & Utilities
+python-dotenv>=1.0.1
+requests>=2.31.0
+
+# Testing & Quality
+pytest>=8.1.0

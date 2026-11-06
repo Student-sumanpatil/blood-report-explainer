@@ -1,0 +1,34 @@
+[
+  {
+    "report_name": "Mild Anemia Sample",
+    "raw_text": "Hemoglobin: 10.2 g/dL (12.0 - 15.0)\nRBC Count: 3.6 million/uL (4.0 - 5.2)\nTotal Leukocyte Count: 6800 cells/uL (4000 - 11000)\nPlatelets: 210000 /uL (150000 - 450000)",
+    "expected_measurements": [
+      {"canonical_name": "Hemoglobin", "measured_value": 10.2, "expected_status": "LOW", "is_critical": false},
+      {"canonical_name": "Red Blood Cell Count", "measured_value": 3.6, "expected_status": "LOW", "is_critical": false},
+      {"canonical_name": "White Blood Cell Count", "measured_value": 6800.0, "expected_status": "NORMAL", "is_critical": false},
+      {"canonical_name": "Platelet Count", "measured_value": 210000.0, "expected_status": "NORMAL", "is_critical": false}
+    ],
+    "expected_overall_status": "ATTENTION_NEEDED"
+  },
+  {
+    "report_name": "Elevated Lipid Panel",
+    "raw_text": "Total Cholesterol: 245.0 mg/dL (0.0 - 200.0)\nHDL Cholesterol: 35.0 mg/dL (40.0 - 60.0)\nLDL Cholesterol: 155.0 mg/dL (0.0 - 100.0)\nTriglycerides: 280.0 mg/dL (0.0 - 150.0)",
+    "expected_measurements": [
+      {"canonical_name": "Total Cholesterol", "measured_value": 245.0, "expected_status": "HIGH", "is_critical": false},
+      {"canonical_name": "HDL Cholesterol", "measured_value": 35.0, "expected_status": "LOW", "is_critical": false},
+      {"canonical_name": "LDL Cholesterol", "measured_value": 155.0, "expected_status": "HIGH", "is_critical": false},
+      {"canonical_name": "Triglycerides", "measured_value": 280.0, "expected_status": "HIGH", "is_critical": false}
+    ],
+    "expected_overall_status": "ATTENTION_NEEDED"
+  },
+  {
+    "report_name": "Emergency Critical Red Flag",
+    "raw_text": "Hemoglobin: 6.2 g/dL (12.0 - 16.0)\nPlatelet Count: 24000 /uL (150000 - 450000)\nFasting Glucose: 380 mg/dL (70 - 99)",
+    "expected_measurements": [
+      {"canonical_name": "Hemoglobin", "measured_value": 6.2, "expected_status": "CRITICAL_LOW", "is_critical": true},
+      {"canonical_name": "Platelet Count", "measured_value": 24000.0, "expected_status": "CRITICAL_LOW", "is_critical": true},
+      {"canonical_name": "Fasting Blood Glucose", "measured_value": 380.0, "expected_status": "CRITICAL_HIGH", "is_critical": true}
+    ],
+    "expected_overall_status": "CRITICAL"
+  }
+]
